@@ -1,0 +1,54 @@
+// ### DEFAULT v4 (Laptop)  - Top ### //
+
+{
+"include": [
+  "$HOME/.config/waybar/modules/modules",
+  "$HOME/.config/waybar/modules/modulesWorkspaces",
+  "$HOME/.config/waybar/modules/modulesCustom",
+  "$HOME/.config/waybar/modules/modulesGroups",
+  ],
+"layer": "top",
+//"mode": "dock",
+"exclusive": true,
+"passthrough": false,
+"position": "top",
+"spacing": 3,
+"fixed-center": true,
+"ipc": true,
+"margin-top": 3,
+"margin-left": 8,
+"margin-right": 8,
+
+"modules-left": [
+	"group/app_drawer",
+	"custom/separator#dot-line",
+	"group/mobo_drawer",
+	"custom/separator#blank",
+	"group/laptop",
+	"custom/separator#line",
+	"custom/weather",
+  "custom/separator#blank",
+  "custom/cava_mviz",
+
+	],
+
+"modules-center": [
+  "custom/swaync",
+	"custom/separator#dot-line",
+	"clock",
+	"custom/separator#line",
+	"hyprland/workspaces#kanji",
+	"custom/separator#dot-line",
+	], 
+
+"modules-right": [
+	"network#speed",
+	"group/connections",
+	"custom/separator#blank",
+	"tray",
+	"mpris", 
+	"group/audio",
+	"custom/separator#blank",
+	"group/status",
+	],
+}

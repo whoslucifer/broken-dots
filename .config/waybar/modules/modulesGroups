@@ -1,0 +1,61 @@
+/* Waybar Modules - Groups Modules */
+
+{
+// GROUPS
+"group/app_drawer": {
+	"orientation": "inherit",
+	"drawer": {
+		"transition-duration": 500,
+		"children-class": "custom/menu",
+		"transition-left-to-right": true
+        },
+	"modules": [
+		"custom/menu",
+		"custom/file_manager",
+		"custom/tty",
+		"custom/browser",
+		"custom/settings",
+		"power-profiles-daemon",
+	]
+},
+"group/motherboard": {
+	"orientation": "horizontal",
+	"modules": [
+		"cpu",
+		"memory",
+		"temperature",
+		"disk",
+	]
+},
+
+"group/mobo_drawer": {
+	"orientation": "inherit",
+	"modules": [
+		"temperature",		
+		"cpu",	
+		"memory",
+		"disk",
+	]
+},
+"group/laptop": {
+	"orientation": "inherit",
+	"modules": [
+		"backlight",
+	]
+},
+
+"group/connections": {
+	"orientation": "inherit",
+	"modules": [
+		"network/speed",
+	]
+},
+
+"group/status": {
+	"orientation": "inherit",
+	"modules": [
+    "battery",
+		"custom/power",
+	]
+},
+}
